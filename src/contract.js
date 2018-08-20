@@ -4,10 +4,14 @@ var crypto = require('crypto.js');
 var lodash = require('lodash.js');
 
 var TestContract = function () {
+    LocalContractStorage.defineProperties(this, {
+        name: null,
+        count: null
+    });
 };
 
 TestContract.prototype = {
-    init: function (name, count, allocation) {
+    init: function () {
 
     },
     testNoWindow: function () {
