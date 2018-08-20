@@ -3,29 +3,31 @@
 var crypto = require('crypto.js');
 var lodash = require('lodash.js');
 
-var SampleContract = function () {
+var TestContract = function () {
 };
 
-SampleContract.prototype = {
+TestContract.prototype = {
     init: function (name, count, allocation) {
 
     },
-    testWindow: function () {
+    testNoWindow: function () {
         var name = window.name;
     },
-    testSetTimeout: function () {
+    testNoSetTimeout: function () {
 
         setTimeout(function () {
         }, 1000);
-
-    },
-    testSetInterval: function () {
 
         setInterval(function () {
         }, 1000);
 
     },
-    testProxy: function () {
+    testSetInterval: function () {
+
+
+
+    },
+    testNoProxy: function () {
 
         var o = {name: 1};
 
@@ -39,4 +41,5 @@ SampleContract.prototype = {
     }
 };
 
-module.exports = SampleContract;
+// module.exports = TestContract;
+export default TestContract
