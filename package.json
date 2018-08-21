@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/xingyunwork/nebulas-contract-eslint-demo#readme",
   "devDependencies": {
-    "eslint-plugin-nebulas-contract": "^0.0.13"
+    "eslint-plugin-nebulas-contract": "^0.0.14"
   },
   "dependencies": {
     "eslint": "^5.4.0"

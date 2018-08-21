@@ -9,5 +9,4 @@ TestContract.prototype = {
     }
 };
 
-export default TestContract;
 // module.exports = TestContract;
