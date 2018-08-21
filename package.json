@@ -4,8 +4,7 @@
   "description": "nebulas contract eslint demo",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src//**/*.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src//**/*.js"
   },
   "repository": {
     "type": "git",
@@ -21,9 +20,7 @@
   },
   "homepage": "https://github.com/xingyunwork/nebulas-contract-eslint-demo#readme",
   "devDependencies": {
+    "eslint": "^5.4.0",
     "eslint-plugin-nebulas-contract": "^0.0.14"
-  },
-  "dependencies": {
-    "eslint": "^5.4.0"
   }
 }
