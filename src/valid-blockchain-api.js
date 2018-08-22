@@ -14,18 +14,8 @@ TestContract.prototype = {
         console.log('init: Blockchain.transaction.nonce = ' + Blockchain.transaction.nonce);
         console.log('init: Blockchain.transaction.hash = ' + Blockchain.transaction.hash);
 
-        // console.log(Blockchain.block.nonce);
-
-    },
-    transfer: function (address, value) {
-        Event.trigger("transfer", {
-            Transfer: {
-                from: Blockchain.transaction.to,
-                to: address,
-                value: value
-            }
-        });
-    },
+        console.log(Blockchain.block.nonce);
+    }
 };
 
 module.exports = TestContract;
