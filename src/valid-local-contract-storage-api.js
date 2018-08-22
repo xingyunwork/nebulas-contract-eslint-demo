@@ -1,14 +1,16 @@
 'use strict';
 
 var TestContract = function () {
+
+    LocalContractStorage.defineMapProperty(this, "allocation");
+
+    LocalContractStorage.defineMapProperty(this, "allocation");
+
+
     LocalContractStorage.defineProperties(this, {
         name: null,
         count: null
     });
-
-    LocalContractStorage.defineMapProperty(this, "allocation");
-
-    LocalContractStorage.defineMapProperty(this, "allocation");
 
 
     LocalContractStorage.defineMyProperties(this, {
@@ -16,6 +18,16 @@ var TestContract = function () {
         count: null
     });
     LocalContractStorage.defineMapMyProperty(this, "allocation");
+
+
+    LocalContractStorage.defineMapProperty(this, {
+        name: {
+
+        },
+        count: {
+
+        }
+    });
 
 };
 
